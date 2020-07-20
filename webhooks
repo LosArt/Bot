@@ -4,7 +4,7 @@ message = {
 }
 client = Line::Bot::Client.new { |config|
     config.channel_secret = "943f86ab3041a45964be69bbd367f89e"
-    config.channel_token = "1654468636"
+    config.channel_token = "8FSqe/ecFoyOzH+BPKOabGB1SpreFyT26iH6HPkUneMGSLw2v6Z0INlZ2RyRMSAeOWYnE6jpmcAFJ+cuhlEhtKA+9YqAMeSISiCyoICK0c3ZTaPeCbDsSDpUnLGF//2mz0zmGTTwjmlTR2/FqNYU6gdB04t89/1O/w1cDnyilFU="
 }
 response = client.push_message("<to>", message)
 p response
