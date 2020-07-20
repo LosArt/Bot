@@ -1,0 +1,10 @@
+message = {
+  type: 'text',
+  text: 'Hi ICGers,This For You.New Update On IndoCloudGaming.com'
+}
+client = Line::Bot::Client.new { |config|
+    config.channel_secret = "943f86ab3041a45964be69bbd367f89e"
+    config.channel_token = "1654468636"
+}
+response = client.push_message("<to>", message)
+p response
