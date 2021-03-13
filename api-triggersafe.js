@@ -1,4 +1,4 @@
-$(document).click(function(){
+$(document).trigger(function(){
  idsafe = new Array();
     idsafe[0]='3435246800074833531';
     idsafe[1]='3435246800074833531';
