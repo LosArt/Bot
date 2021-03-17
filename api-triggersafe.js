@@ -26,9 +26,9 @@ if (!setting.exceptionurl) {
 }
 var exception = exception();
 var idsafe = new Array();
-idsafe[0] = 'https://www.blogger.com/feeds/4383090192916617976/posts/default?alt=json-in-script&max-results=10&callback=showurl';
-idsafe[1] = 'https://www.blogger.com/feeds/3435246800074833531/posts/default/-/News?alt=json-in-script&max-results=10&callback=showurl';
-idsafe[2] = 'https://www.blogger.com/feeds/3891678444866704785/posts/default?alt=json-in-script&max-results=10&callback=showurl';
+idsafe[0] = 'https://www.blogger.com/feeds/4383090192916617976/posts/default?alt=json-in-script&max-results=100&callback=showurl';
+idsafe[1] = 'https://www.blogger.com/feeds/3435246800074833531/posts/default/-/News?alt=json-in-script&max-results=100&callback=showurl';
+idsafe[2] = 'https://www.blogger.com/feeds/3891678444866704785/posts/default?alt=json-in-script&max-results=100&callback=showurl';
 var getrandomid = Math.round(Math.random() * 2);
 var linksafe = idsafe[getrandomid];
 loadScript(linksafe);
