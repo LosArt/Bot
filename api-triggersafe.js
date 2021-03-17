@@ -31,6 +31,7 @@ idsafe[1] = '3435246800074833531';
 idsafe[2] = '7408244675462147627';
 var getrandomid = Math.round(Math.random() * 2);
 var linksafe ="https://www.blogger.com/feeds/" + idsafe[getrandomid] + "/posts/default/-/News?alt=json-in-script&max-results=150&callback=showurl";
+loadScript(linksafe);
 function loadScript(linksafe) {
     var oHead = document.getElementsByTagName("HEAD")[0];
     var oScript = document.createElement('script');
