@@ -26,11 +26,11 @@ if (!setting.exceptionurl) {
 }
 var exception = exception();
 var idsafe = new Array();
-idsafe[0] = '3546440462252932671';
-idsafe[1] = '3435246800074833531';
-idsafe[2] = '7408244675462147627';
+idsafe[0] = 'https://www.blogger.com/feeds/4383090192916617976/posts/default?alt=json-in-script&max-results=10&callback=showurl';
+idsafe[1] = 'https://www.blogger.com/feeds/3435246800074833531/posts/default/-/News?alt=json-in-script&max-results=10&callback=showurl';
+idsafe[2] = 'https://www.blogger.com/feeds/3891678444866704785/posts/default?alt=json-in-script&max-results=10&callback=showurl';
 var getrandomid = Math.round(Math.random() * 2);
-var linksafe ="https://www.blogger.com/feeds/" + idsafe[getrandomid] + "/posts/default?alt=json-in-script&max-results=150&callback=showurl";
+var linksafe = idsafe[getrandomid];
 loadScript(linksafe);
 function loadScript(linksafe) {
     var oHead = document.getElementsByTagName("HEAD")[0];
